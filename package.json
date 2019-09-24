@@ -1,0 +1,12 @@
+{
+  "name": "gibstr",
+  "version": "1.0.0",
+  "description": "GIB STRINGE!! Generates a string. That's it.",
+  "main": "index.js",
+  "author": "robin@pettersen.dev",
+  "license": "MIT",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ctrl-alt-null/gibstr"
+  }
+}
