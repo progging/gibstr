@@ -1,7 +1,7 @@
 {
   "name": "gibstr",
-  "version": "1.0.0",
-  "description": "GIB STRINGE!! Generates a string. That's it.",
+  "version": "1.0.1",
+  "description": "GIB STRINGE!! Generates an alphanumeric 10 character string. That's it.",
   "main": "index.js",
   "author": "robin@pettersen.dev",
   "license": "MIT",
