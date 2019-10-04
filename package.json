@@ -1,6 +1,6 @@
 {
   "name": "gibstr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GIB STRINGE!! Generates an alphanumeric 10 character string. That's it.",
   "main": "index.js",
   "author": "robin@pettersen.dev",
@@ -8,5 +8,10 @@
   "repository": {
     "type" : "git",
     "url" : "https://github.com/ctrl-alt-null/gibstr"
-  }
+  },
+  "keywords": [
+    "random",
+    "string",
+    "generation"
+  ]
 }
