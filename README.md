@@ -1,6 +1,6 @@
 # GIBSTR
 
->GIB STRINGE!! Generates an alphanumeric 10 character string. That's it.
+>GIB STRINGE!! Generates an alphanumeric string. That's it.
 
 ## Install
 `npm i -S gibstr` or `yarn add gibstr`
@@ -9,5 +9,9 @@
 ```javascript
 import gibstr from "gibstr"
 
-colsole.log(gibstr()) //"cpbxf3j9qz" or something 
+console.log(gibstr()) //"cpbxf3j9qz" or something 
+
+//or
+
+console.log(gibstr(200)) //Long string
 ```
