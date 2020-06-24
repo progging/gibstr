@@ -17,3 +17,7 @@ console.log(gibstr()) //"cpbxf3j9qz" or something
 
 console.log(gibstr(200)) //Long string
 ```
+
+## Test
+
+`npm i && npm t`
