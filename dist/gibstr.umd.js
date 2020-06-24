@@ -1,0 +1,2 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):(e=e||self).gibstr=t()}(this,function(){var e="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";return function(t){void 0===t&&(t=10);for(var n="",o=0;o<t;o++)n+=e.charAt(Math.floor(Math.random()*e.length));return n}});
+//# sourceMappingURL=gibstr.umd.js.map

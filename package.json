@@ -1,18 +1,36 @@
 {
   "name": "gibstr",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "GIB STRINGE!! Generates an alphanumeric string. That's it.",
-  "main": "index.js",
-  "author": "robin@pettersen.dev",
+  "source": "dist/gibstr.module.js",
+  "module": "dist/gibstr.module.js",
+  "main": "src/gibstr.js",
+  "unpkg": "dist/gibstr.umd.js",
+  "author": "rob@tenk.dev",
+  "scripts": {
+    "build": "microbundle src/gibstr.ts -o dist/ --name gibstr",
+    "dev": "microbundle watch",
+    "test": "mocha -r ts-node/register test/**/*.test.ts"
+  },
   "license": "MIT",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/ctrl-alt-null/gibstr"
+    "type": "git",
+    "url": "https://github.com/progging/gibstr"
   },
+  "homepage": "https://github.com/progging/gibstr",
   "keywords": [
     "random",
     "alphanumeric",
     "string",
     "generation"
-  ]
+  ],
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "chai": "^4.2.0",
+    "microbundle": "^0.12.2",
+    "mocha": "^8.0.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
+  }
 }
