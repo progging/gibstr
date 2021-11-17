@@ -21,3 +21,7 @@ console.log(gibstr(200)) //Long string
 ## Test
 
 `npm i && npm t`
+
+## License
+
+MIT
