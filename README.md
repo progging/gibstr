@@ -9,7 +9,7 @@
 ## Usage
 
 ```javascript
-import gibstr from 'gibstr'
+import { gibstr } from 'gibstr'
 
 console.log(gibstr()) //"cpbxf3j9qz" or something
 

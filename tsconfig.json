@@ -1,16 +1,7 @@
 {
+  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "module": "esnext",
-    "lib": ["ES2015"],
-    "declaration": true,
-    "removeComments": true,
-    "preserveConstEnums": true,
-    "strict": true,
-    "sourceMap": true,
-    "baseUrl": ".",
-    "outDir": "dist",
-    "esModuleInterop": true
+    "sourceMap": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules"]
+  "include": ["src/**/*", "test/**/*"]
 }
