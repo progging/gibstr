@@ -1,6 +1,6 @@
 {
   "name": "gibstr",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "GIB STRINGE!! Generates an alphanumeric string. That's it.",
   "source": "dist/gibstr.js",
   "main": "src/gibstr.js",
