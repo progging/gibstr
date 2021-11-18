@@ -39,8 +39,7 @@ jobs:
   publish-gpr:
     env:
       tag: ${{ github.event.release.tag_name }}
-    needs: build
-    needs: publish-npm
+    needs: [build, publish-npm]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
