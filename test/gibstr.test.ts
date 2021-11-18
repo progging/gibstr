@@ -1,5 +1,5 @@
 import { describe, expect } from '@jest/globals'
-import { gibstr } from '../src/gibstr'
+import { gibstr } from '../src'
 
 describe('Gibstr', () => {
   it('should generate a string', function () {
