@@ -5,22 +5,9 @@ on:
     types: [created]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
-      - run: npm ci
-      # - run: npm run check
-      # - run: npm run lint
-      # - run: npm test
-
   publish-npm:
     env:
       tag: ${{ github.event.release.tag_name }}
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -29,6 +16,10 @@ jobs:
           node-version: '12.x'
           registry-url: https://registry.npmjs.org/
       - run: npm ci
+      - run: npm run check
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
       - run: git config --global user.email "robin@foyn.io"
       - run: git config --global user.name "Robin Foyn"
       - run: npm version ${tag}
