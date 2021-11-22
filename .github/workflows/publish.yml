@@ -27,22 +27,25 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
 
-  # publish-gpr:
-  #   env:
-  #     tag: ${{ github.event.release.tag_name }}
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v2
-  #     - uses: actions/setup-node@v1
-  #       with:
-  #         node-version: '12.x'
-  #         registry-url: https://npm.pkg.github.com/
-  #         scope: '@progging'
-  #     - run: npm ci
-  #     - run: git config --global user.email "robin@foyn.io"
-  #     - run: git config --global user.name "Robin Foyn"
-  #     - run: npm version ${tag}
-  #     - run: npm publish --access public
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.GHP_AUTH_TOKEN}}
+  publish-gpr:
+    env:
+      tag: ${{ github.event.release.tag_name }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+          registry-url: https://npm.pkg.github.com/
+          scope: '@progging'
+      - run: npm ci
+      - run: npm run check-types
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+      - run: git config --global user.email "robin@foyn.io"
+      - run: git config --global user.name "Robin Foyn"
+      - run: npm version ${tag}
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GHP_AUTH_TOKEN}}
