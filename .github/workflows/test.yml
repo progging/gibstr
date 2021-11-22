@@ -1,4 +1,4 @@
-name: Check, lint, test
+name: Check types, lint, test
 
 on:
   push:
@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm ci
-      - run: npm run check
+      - run: npm run check-types
       - run: npm run lint
       - run: npm test
         env:
