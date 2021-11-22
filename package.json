@@ -13,6 +13,7 @@
   "files": [
     "dist/**/*"
   ],
+  "type": "module",
   "scripts": {
     "build": "parcel build",
     "watch": "parcel watch",
