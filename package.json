@@ -1,5 +1,9 @@
 {
   "name": "gibstr",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/progging/gibstr.git"
+  },
   "version": "0.0.0",
   "description": "GIB STRINGE!! Generates an alphanumeric string. That's it.",
   "source": "src/index.ts",
@@ -9,7 +13,6 @@
   "files": [
     "dist/**/*"
   ],
-  "author": "Robin Foyn",
   "scripts": {
     "build": "parcel build",
     "watch": "parcel watch",
@@ -18,11 +21,8 @@
     "check": "tsc --noEmit",
     "lint": "npx eslint . --ext .ts"
   },
+  "author": "Robin Foyn",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/progging/gibstr"
-  },
   "homepage": "https://github.com/progging/gibstr",
   "keywords": [
     "random",
