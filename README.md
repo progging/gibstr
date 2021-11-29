@@ -8,7 +8,7 @@
 
 ## Usage
 
-```javascript
+```typescript
 import { gibstr } from 'gibstr'
 
 console.log(gibstr()) //"cpbxf3j9qz" or something
